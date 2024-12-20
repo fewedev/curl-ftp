@@ -1,0 +1,28 @@
+{
+    "name": "fewedev/curl-ftp",
+    "description": "Feasible web development curl FTP",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": [
+        "curl",
+        "ftp"
+    ],
+    "homepage": "https://github.com/fewedev/curl-ftp",
+    "authors": [
+        {
+            "name": "Andreas Knollmann",
+            "email": "a.knollmann@seak.dev",
+            "homepage": "https://www.seak.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "fewedev/base": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "FeWeDev\\CurlFtp\\": "src"
+        }
+    }
+}
