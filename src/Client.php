@@ -384,7 +384,6 @@ class Client
         $result = @curl_exec($this->curlHandle);
 
         if ($result === false) {
-            echo curl_error($this->curlHandle) . PHP_EOL;
             throw new Exception(
                 sprintf(
                     'Could not handle content in path: %s (%d)',
