@@ -386,9 +386,10 @@ class Client
         if ($result === false) {
             throw new Exception(
                 sprintf(
-                    'Could not handle content in path: %s (%d)',
+                    'Could not handle content in path: %s (%d: %s)',
                     $this->getPath($fileName),
-                    curl_errno($this->curlHandle)
+                    curl_errno($this->curlHandle),
+                    curl_error($this->curlHandle)
                 )
             );
         }
